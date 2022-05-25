@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AMP.Views.DetalleSuscripcionPage"
+             Title="Detalle Suscripcón">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Documento"
+                   HorizontalOptions="Start" 
+                   />
+            <Entry
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center"
+                Text="{Binding documento}"
+                />
+            <Label Text="Nombre"
+                   HorizontalOptions="Start"
+                   />
+            <Entry
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center"
+                Text="{Binding nombres}"
+                />
+            <Label Text="Estado"
+                   HorizontalOptions="Start"
+                   />
+            
+            <CheckBox 
+                HorizontalOptions="StartAndExpand"
+                    IsChecked="{Binding estado}"
+                />
+
+            <Button
+                Text="Guardar"
+                Clicked="{Binding Guardar}"
+                >
+            </Button>
+            <Button
+                Text="Borrar"
+                 Clicked="{Binding Borrar}"
+                >
+            </Button>
+            <Button
+                Text="Cancelar"
+                 Clicked="{Binding Cancelar}"
+                >
+            </Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

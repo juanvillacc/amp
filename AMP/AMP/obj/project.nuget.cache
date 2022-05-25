@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "+yQk2u0EOVrLrYLoLFO0IHdjVMI2doHNgwW79QGuFXkuA8WHv4hYbDaRdxCjyFwhPN7DIc8XM52f0RkgjAE2PA==",
+  "success": true,
+  "projectFilePath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

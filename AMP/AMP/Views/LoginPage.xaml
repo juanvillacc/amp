@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AMP.Views.LoginPage"
+             xmlns:local="clr-namespace:AMP.ViewModels"
+             Title="Bienvenidos al sistema"
+             >
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Login AMP"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Usuario"
+                   HorizontalOptions="Start"></Label>
+            <Entry  HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center" Text="{Binding Usuario}"></Entry>
+            <Label Text="Contraseña"
+                   HorizontalOptions="Start"></Label>
+            <Entry  HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center" Text="{Binding Contrasena}"></Entry>
+            <Button Text="Iniciar sesión" Command="{Binding IniciarSesion}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

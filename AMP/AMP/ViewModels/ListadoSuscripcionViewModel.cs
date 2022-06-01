@@ -1,4 +1,5 @@
 ﻿using AMP.Models;
+using AMP.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,6 +14,10 @@ namespace AMP.ViewModels
         {
 
             Navigation = navigation;
+            SuscripcionService Service = new SuscripcionService();
+
+            var lista = await Service.ObtenerSuscripciones();
+            ListaSuscripcion =  lista;
         }
 
         private List<Suscripcion> _listaSucripcion;
@@ -29,6 +34,8 @@ namespace AMP.ViewModels
                 }    
             }
         }
+
+
 
         
 

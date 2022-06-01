@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\temp\\amp\\AMP\\AMP.Android\\AMP.Android.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\temp\\amp\\AMP\\AMP.Android\\AMP.Android.csproj",
         "packagesPath": "C:\\Users\\JuanV\\.nuget\\packages\\",
         "outputPath": "C:\\temp\\amp\\AMP\\AMP.Android\\obj\\",
+=======
+    "S:\\PROYECTO AMP\\AMP\\AMP.Android\\AMP.Android.csproj": {}
+  },
+  "projects": {
+    "S:\\PROYECTO AMP\\AMP\\AMP.Android\\AMP.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\AMP.Android.csproj",
+        "projectName": "AMP.Android",
+        "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\AMP.Android.csproj",
+        "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
+        "outputPath": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\obj\\",
+>>>>>>> 294c628ef89a3cb85d1c3b0b0724c86534f88c18
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +46,13 @@
         "frameworks": {
           "monoandroid12.0": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj": {
                 "projectPath": "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj"
+=======
+              "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj": {
+                "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj"
+>>>>>>> 294c628ef89a3cb85d1c3b0b0724c86534f88c18
               }
             }
           }
@@ -54,6 +73,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -62,6 +82,16 @@
         "projectPath": "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj",
         "packagesPath": "C:\\Users\\JuanV\\.nuget\\packages\\",
         "outputPath": "C:\\temp\\amp\\AMP\\AMP\\obj\\",
+=======
+    "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj",
+        "projectName": "AMP",
+        "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj",
+        "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
+        "outputPath": "S:\\PROYECTO AMP\\AMP\\AMP\\obj\\",
+>>>>>>> 294c628ef89a3cb85d1c3b0b0724c86534f88c18
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

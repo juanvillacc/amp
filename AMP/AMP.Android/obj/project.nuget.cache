@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "5EwoxF55EJeJ+WxJOmHya7vYIGIcCDoN84s4/Emm/U78KXePOp1GoujSNW3IoVhwl0FB+JwOiCCdaxOq3DZGGw==",
   "success": true,
   "projectFilePath": "C:\\temp\\amp\\AMP\\AMP.Android\\AMP.Android.csproj",
+=======
+  "dgSpecHash": "7s243HI4AcdBNGHq0ycv4An1f54h5gM2/Q86k7FT1Gbh9ZHN4LxZdf0fdxHCo/YN3zBslHNIqRhaRskgJfOBAg==",
+  "success": true,
+  "projectFilePath": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\AMP.Android.csproj",
+>>>>>>> 294c628ef89a3cb85d1c3b0b0724c86534f88c18
   "expectedPackageFiles": [
     "C:\\Users\\JuanV\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\JuanV\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

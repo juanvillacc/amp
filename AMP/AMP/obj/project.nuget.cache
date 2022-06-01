@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "QOnA9Sk7uxi7ZNWbdKXxsh2rhWX2jODb7ZzKIAEro1PHcDf79D0/j94xFFuQaspAAOEpKHnxMnzVgGbjs9vowg==",
   "success": true,
   "projectFilePath": "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj",
+=======
+  "dgSpecHash": "iVoqDtME8t6BgkS3uNkbOIORLDK5TlLrGpRwzZy7tyWLerSRy9ha3DZBL3e2jKPRHJCCG2n+89quQOWWy0XinQ==",
+  "success": true,
+  "projectFilePath": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj",
+>>>>>>> 294c628ef89a3cb85d1c3b0b0724c86534f88c18
   "expectedPackageFiles": [
     "C:\\Users\\JuanV\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\JuanV\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

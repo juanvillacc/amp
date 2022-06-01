@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMP.Android", "AMP\AMP.Andr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMP.iOS", "AMP\AMP.iOS\AMP.iOS.csproj", "{76C61D43-716D-46C0-8E89-36826E249C19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMP", "AMP\AMP\AMP.csproj", "{73A6BDFA-6133-4423-97AD-3411702F0FED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMP", "AMP\AMP\AMP.csproj", "{73A6BDFA-6133-4423-97AD-3411702F0FED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1488C7F-230D-4513-BCA7-464006801BEF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

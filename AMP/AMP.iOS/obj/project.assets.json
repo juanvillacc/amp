@@ -1049,29 +1049,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\JuanV\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj",
+      "projectUniqueName": "C:\\temp\\amp\\AMP\\AMP.iOS\\AMP.iOS.csproj",
       "projectName": "AMP.iOS",
-      "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj",
-      "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
-      "outputPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\obj\\",
+      "projectPath": "C:\\temp\\amp\\AMP\\AMP.iOS\\AMP.iOS.csproj",
+      "packagesPath": "C:\\Users\\JuanV\\.nuget\\packages\\",
+      "outputPath": "C:\\temp\\amp\\AMP\\AMP.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Coord. Desarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JuanV\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1083,8 +1080,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj": {
-              "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj"
+            "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj": {
+              "projectPath": "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj"
             }
           }
         }

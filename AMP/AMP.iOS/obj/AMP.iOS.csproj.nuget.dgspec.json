@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj": {}
+    "C:\\temp\\amp\\AMP\\AMP.iOS\\AMP.iOS.csproj": {}
   },
   "projects": {
-    "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj": {
+    "C:\\temp\\amp\\AMP\\AMP.iOS\\AMP.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj",
+        "projectUniqueName": "C:\\temp\\amp\\AMP\\AMP.iOS\\AMP.iOS.csproj",
         "projectName": "AMP.iOS",
-        "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj",
-        "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
-        "outputPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\obj\\",
+        "projectPath": "C:\\temp\\amp\\AMP\\AMP.iOS\\AMP.iOS.csproj",
+        "packagesPath": "C:\\Users\\JuanV\\.nuget\\packages\\",
+        "outputPath": "C:\\temp\\amp\\AMP\\AMP.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Coord. Desarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JuanV\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
@@ -34,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj": {
-                "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj"
+              "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj": {
+                "projectPath": "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj"
               }
             }
           }
@@ -67,24 +65,22 @@
         }
       }
     },
-    "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj": {
+    "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj",
+        "projectUniqueName": "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj",
         "projectName": "AMP",
-        "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj",
-        "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
-        "outputPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\obj\\",
+        "projectPath": "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj",
+        "packagesPath": "C:\\Users\\JuanV\\.nuget\\packages\\",
+        "outputPath": "C:\\temp\\amp\\AMP\\AMP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Coord. Desarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JuanV\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -138,7 +134,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

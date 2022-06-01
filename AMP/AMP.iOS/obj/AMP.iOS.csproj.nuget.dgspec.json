@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj": {}
+    "S:\\PROYECTO AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj": {}
   },
   "projects": {
-    "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj": {
+    "S:\\PROYECTO AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj",
+        "projectUniqueName": "S:\\PROYECTO AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj",
         "projectName": "AMP.iOS",
-        "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj",
+        "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP.iOS\\AMP.iOS.csproj",
         "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
-        "outputPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.iOS\\obj\\",
+        "outputPath": "S:\\PROYECTO AMP\\AMP\\AMP.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj": {
-                "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj"
+              "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj": {
+                "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj": {
+    "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj",
+        "projectUniqueName": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj",
         "projectName": "AMP",
-        "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj",
+        "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj",
         "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
-        "outputPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\obj\\",
+        "outputPath": "S:\\PROYECTO AMP\\AMP\\AMP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using AMP.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -11,7 +12,8 @@ namespace AMP.Utilities
     {
         HttpClient httpclient;
         string urlBase = "https://6284fece3060bbd34742ca84.mockapi.io/api/v1/";
-        
+        string urlSeguridad = "Seguridad";
+
         public RestService()
         {
             httpclient = new HttpClient();
@@ -60,7 +62,6 @@ namespace AMP.Utilities
             return false;
         }
 
-
         public async Task<Boolean> Borrar(int id,string ruta)
         {
             string uri = ($"{urlBase + ruta}/{id}");
@@ -72,7 +73,26 @@ namespace AMP.Utilities
             return false;
         }
 
+        public async Task<string> ValidarUsuario(string Login, string Clave)
+        {
+            string resultado = "";
+            Usuario usuario = new Usuario();
+            usuario.Clave = Clave;
+            usuario.Login = Login;
 
+            var clienteSerializado = JsonConvert.SerializeObject(usuario);
+            StringContent content = new StringContent(clienteSerializado, Encoding.UTF8, "application/json");
+
+            Uri uriModificar = new Uri(urlBase + urlSeguridad + "/" + "ObtenerToken");
+            
+            HttpResponseMessage response = await httpclient.PostAsync(uriModificar, content);
+            if (response.IsSuccessStatusCode)
+            {
+                resultado = await response.Content.ReadAsStringAsync();
+            }
+
+            return resultado;
+        }
 
     }
 }

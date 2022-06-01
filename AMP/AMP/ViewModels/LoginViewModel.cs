@@ -1,4 +1,5 @@
-﻿using AMP.Views;
+﻿using AMP.Services;
+using AMP.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,15 @@ namespace AMP.ViewModels
             IniciarSesion = new Command(
                 execute: async () =>
                 {
-                    await Navigation.PushAsync(new ListadoSuscripcionPage());
+                    UsuarioService usuario = new UsuarioService();
+
+                    var validacion = await usuario.ValidarUsuarioAsync(Usuario, Contrasena);
+                    if (validacion)
+                    {
+                        await Navigation.PushAsync(new ListadoSuscripcionPage());
+                    }
+
+
                 }, canExecute: () =>
                 {
                     return !String.IsNullOrEmpty(Usuario) && !String.IsNullOrEmpty(Contrasena);
@@ -24,7 +33,7 @@ namespace AMP.ViewModels
             Navigation = navigation;
         }
 
-       
+
         private String _usuario;
 
         public String Usuario
@@ -38,7 +47,7 @@ namespace AMP.ViewModels
                     ((Command)IniciarSesion).ChangeCanExecute();
                     _usuario = value;
                 }
-                
+
             }
         }
 
@@ -59,7 +68,7 @@ namespace AMP.ViewModels
             }
         }
 
-     
+
 
         public ICommand IniciarSesion { get; set; }
     }

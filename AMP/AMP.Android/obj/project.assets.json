@@ -3216,11 +3216,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.Android\\AMP.Android.csproj",
+      "projectUniqueName": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\AMP.Android.csproj",
       "projectName": "AMP.Android",
-      "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.Android\\AMP.Android.csproj",
+      "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\AMP.Android.csproj",
       "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
-      "outputPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP.Android\\obj\\",
+      "outputPath": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3243,8 +3243,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj": {
-              "projectPath": "E:\\ASALUDSOLUTION_APP\\Proyecto\\AMP\\AMP\\AMP\\AMP.csproj"
+            "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj": {
+              "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj"
             }
           }
         }

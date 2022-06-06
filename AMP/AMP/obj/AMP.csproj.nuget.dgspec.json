@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj": {}
   },
   "projects": {
@@ -13,19 +12,6 @@
         "projectPath": "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj",
         "packagesPath": "C:\\Users\\JuanV\\.nuget\\packages\\",
         "outputPath": "C:\\temp\\amp\\AMP\\AMP\\obj\\",
-=======
-    "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj": {}
-  },
-  "projects": {
-    "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj",
-        "projectName": "AMP",
-        "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj",
-        "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
-        "outputPath": "S:\\PROYECTO AMP\\AMP\\AMP\\obj\\",
->>>>>>> 294c628ef89a3cb85d1c3b0b0724c86534f88c18
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

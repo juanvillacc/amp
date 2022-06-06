@@ -1,8 +1,10 @@
 ﻿using AMP.Models;
 using AMP.Services;
-using System;
+using AMP.Utilities;
+using AMP.Views;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace AMP.ViewModels
@@ -10,14 +12,29 @@ namespace AMP.ViewModels
     internal class ListadoSuscripcionViewModel : BaseViewModel
     {
         INavigation Navigation;
+        SuscripcionService Service = new SuscripcionService();
+        public ICommand commandAgregar { get; set; }
+        public ICommand commandSeleccionar { get; set; }
+
         public ListadoSuscripcionViewModel(INavigation navigation)
         {
-
             Navigation = navigation;
-            SuscripcionService Service = new SuscripcionService();
+            commandAgregar = new Command(execute: async () =>
+            {
+                Constantes.SuscripcionSeleccionada = new Suscripcion();
+                await AbrirDetalle();
+            });
 
-            var lista = await Service.ObtenerSuscripciones();
-            ListaSuscripcion =  lista;
+            commandSeleccionar = new Command(execute: async (id) =>
+            {
+                Constantes.SuscripcionSeleccionada = (Suscripcion)id;
+                await AbrirDetalle();
+            });
+        }
+
+        private async Task AbrirDetalle()
+        {
+            await Navigation.PushAsync(new DetalleSuscripcionPage());
         }
 
         private List<Suscripcion> _listaSucripcion;
@@ -29,15 +46,28 @@ namespace AMP.ViewModels
             {
                 if (_listaSucripcion != value)
                 {
-                    OnPropertyChanged("ListaSuscripcion");
                     _listaSucripcion = value;
+                    OnPropertyChanged("ListaSuscripcion");
                 }    
             }
         }
 
+        public async void CargarSuscripciones()
+        {
+            var lista = await Service.ObtenerSuscripciones();
+            ListaSuscripcion = lista;
+        }
+        private Suscripcion _suscripcionSeleccionada;
 
-
-        
-
+        public Suscripcion SuscripcionSeleccionada
+        {
+            get { return _suscripcionSeleccionada; }
+            set {
+                if (value != null)
+                {
+                    commandSeleccionar.Execute(value);
+                }
+            }
+        }
     }
 }

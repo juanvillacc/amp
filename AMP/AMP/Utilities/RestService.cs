@@ -11,12 +11,16 @@ namespace AMP.Utilities
     internal class RestService
     {
         HttpClient httpclient;
-        string urlBase = "https://6284fece3060bbd34742ca84.mockapi.io/api/v1/";
+        string urlBase = "https://asaludapi.azurewebsites.net/";
         string urlSeguridad = "Seguridad";
 
         public RestService()
         {
             httpclient = new HttpClient();
+            if (!String.IsNullOrEmpty(Constantes.Token))
+            {
+                httpclient.DefaultRequestHeaders.Add("Authorization", $"Bearer {Constantes.Token}");
+            }
         }
 
         public async Task<List<T>> Obtener<T>(string ruta)
@@ -64,7 +68,7 @@ namespace AMP.Utilities
 
         public async Task<Boolean> Borrar(int id,string ruta)
         {
-            string uri = ($"{urlBase + ruta}/{id}");
+            string uri = ($"{urlBase + ruta}?id={id}");
             HttpResponseMessage response = await httpclient.DeleteAsync(uri);
             if (response.IsSuccessStatusCode)
             {
@@ -83,9 +87,9 @@ namespace AMP.Utilities
             var clienteSerializado = JsonConvert.SerializeObject(usuario);
             StringContent content = new StringContent(clienteSerializado, Encoding.UTF8, "application/json");
 
-            Uri uriModificar = new Uri(urlBase + urlSeguridad + "/" + "ObtenerToken");
+            Uri uri = new Uri(urlBase + urlSeguridad + "/" + "ObtenerToken");
             
-            HttpResponseMessage response = await httpclient.PostAsync(uriModificar, content);
+            HttpResponseMessage response = await httpclient.PostAsync(uri, content);
             if (response.IsSuccessStatusCode)
             {
                 resultado = await response.Content.ReadAsStringAsync();

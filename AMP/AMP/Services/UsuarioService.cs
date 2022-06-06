@@ -13,10 +13,11 @@ namespace AMP.Services
         public async Task<bool> ValidarUsuarioAsync(string Login, string Clave)
         {
             RestService rest = new RestService();
-
+            Constantes.Token = String.Empty;
             var resultado = await rest.ValidarUsuario(Login, Clave);
             if (!string.IsNullOrEmpty(resultado))
             {
+                Constantes.Token = resultado;   
                 return true;
             }
             else

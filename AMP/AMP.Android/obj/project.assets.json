@@ -3215,19 +3215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\temp\\amp\\AMP\\AMP.Android\\AMP.Android.csproj",
       "projectName": "AMP.Android",
       "projectPath": "C:\\temp\\amp\\AMP\\AMP.Android\\AMP.Android.csproj",
       "packagesPath": "C:\\Users\\JuanV\\.nuget\\packages\\",
       "outputPath": "C:\\temp\\amp\\AMP\\AMP.Android\\obj\\",
-=======
-      "projectUniqueName": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\AMP.Android.csproj",
-      "projectName": "AMP.Android",
-      "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\AMP.Android.csproj",
-      "packagesPath": "C:\\Users\\Coord. Desarrollo\\.nuget\\packages\\",
-      "outputPath": "S:\\PROYECTO AMP\\AMP\\AMP.Android\\obj\\",
->>>>>>> 294c628ef89a3cb85d1c3b0b0724c86534f88c18
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3248,13 +3240,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-<<<<<<< HEAD
             "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj": {
               "projectPath": "C:\\temp\\amp\\AMP\\AMP\\AMP.csproj"
-=======
-            "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj": {
-              "projectPath": "S:\\PROYECTO AMP\\AMP\\AMP\\AMP.csproj"
->>>>>>> 294c628ef89a3cb85d1c3b0b0724c86534f88c18
             }
           }
         }

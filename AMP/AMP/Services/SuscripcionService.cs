@@ -15,10 +15,19 @@ namespace AMP.Services
         public async Task<List<Suscripcion>> ObtenerSuscripciones()
         {
             var lista = await ServiceAPI.Obtener<Suscripcion>(rutaControlador + "/ObtenerSuscripciones");
-
             return lista;
         }
+        public async Task GuardarSuscripcion(Suscripcion dato)
+        {
+            // puede ser actualizar o ingresar
+            var esNuevo = dato.id_usuario_suscripcion == 0;
+            var rutaMetodo = !esNuevo ? "Actualizar" : "Ingresar"; 
+            await ServiceAPI.Guardar<Suscripcion>(dato, esNuevo, rutaControlador + $"/{rutaMetodo}");
+        }
 
-        
+        public async Task EliminarSuscripcion(int id)
+        {
+            await ServiceAPI.Borrar(id, rutaControlador + "/Eliminar");
+        }
     }
 }

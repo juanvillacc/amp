@@ -9,16 +9,15 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Login AMP"
-                VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Label Text="Usuario"
                    HorizontalOptions="Start"></Label>
             <Entry  HorizontalOptions="FillAndExpand"
-                VerticalOptions="Center" Text="{Binding Usuario}"></Entry>
+                VerticalOptions="Center" Text="{Binding Usuario, Mode=OneWayToSource}"></Entry>
             <Label Text="Contraseña"
                    HorizontalOptions="Start"></Label>
             <Entry  HorizontalOptions="FillAndExpand"
-                VerticalOptions="Center" Text="{Binding Contrasena}"></Entry>
+                VerticalOptions="Center" Text="{Binding Contrasena, Mode=OneWayToSource}"></Entry>
             <Button Text="Iniciar sesión" Command="{Binding IniciarSesion}"></Button>
         </StackLayout>
     </ContentPage.Content>

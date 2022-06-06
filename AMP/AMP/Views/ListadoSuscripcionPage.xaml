@@ -4,20 +4,31 @@
              x:Class="AMP.Views.ListadoSuscripcionPage"
              Title="Listado suscripción"
              >
-   
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+" Command="{Binding commandAgregar}"
+                      >
+            <ToolbarItem.IconImageSource>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="Ondroid" Value="plus.png"></On>
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding ListaSuscripcion}">
+        <ListView ItemsSource="{Binding ListaSuscripcion}"
+                  SelectedItem="{Binding SuscripcionSeleccionada, Mode=OneWayToSource}"
+                  >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout>
+                        <StackLayout Orientation="Horizontal">
                             <Label
                                 VerticalOptions="CenterAndExpand" 
-                                HorizontalOptions="CenterAndExpand" 
+                                HorizontalOptions="Start" 
                                 Text="{Binding nombres}"   />
 
                             <CheckBox
-                              HorizontalOptions="CenterAndExpand"
+                              HorizontalOptions="Start"
                               VerticalOptions="CenterAndExpand"
                               IsChecked="{Binding estado}"  
                             />

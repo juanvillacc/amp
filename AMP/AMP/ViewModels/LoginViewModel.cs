@@ -43,9 +43,9 @@ namespace AMP.ViewModels
             {
                 if (_usuario != value)
                 {
+                    _usuario = value;
                     OnPropertyChanged("Usuario");
                     ((Command)IniciarSesion).ChangeCanExecute();
-                    _usuario = value;
                 }
 
             }
@@ -60,9 +60,9 @@ namespace AMP.ViewModels
             {
                 if (_contrasena != value)
                 {
+                    _contrasena = value;
                     OnPropertyChanged("Contrasena");
                     ((Command)IniciarSesion).ChangeCanExecute();
-                    _contrasena = value;
                 }
 
             }

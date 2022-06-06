@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AMP.Models;
+using AMP.Services;
+using AMP.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
@@ -9,6 +12,7 @@ namespace AMP.ViewModels
     internal class DetalleSuscripcionViewModel : BaseViewModel
     {
         private int _id_usuario_suscripcion;
+        INavigation Navigation;
 
         public int id_usuario_suscripcion
         {
@@ -33,11 +37,10 @@ namespace AMP.ViewModels
             {
                 if (_documento != value)
                 {
-                    OnPropertyChanged("documento");
                     _documento = value;
+                    OnPropertyChanged("documento");
+                    ((Command)Guardar).ChangeCanExecute();
                 }
-
-
             }
         }
 
@@ -50,8 +53,9 @@ namespace AMP.ViewModels
             {
                 if (_nombres != value)
                 {
-                    OnPropertyChanged("nombres");
                     _nombres = value;
+                    OnPropertyChanged("nombres");
+                    ((Command)Guardar).ChangeCanExecute();
                 }
             }
         }
@@ -77,15 +81,21 @@ namespace AMP.ViewModels
         public ICommand Guardar { get; set; }
         public ICommand Borrar { get; set; }
         public ICommand Cancelar { get; set; }
-
-
-        INavigation Navigation;
+        SuscripcionService suscripcionService = new SuscripcionService();
         public DetalleSuscripcionViewModel(INavigation navigation)
         {
             Navigation = navigation;
             Guardar = new Command(
-                 execute: () =>
+                 execute:async () =>
                  {
+                     var suscripcion = new Suscripcion()
+                     {
+                         estado = this.estado,
+                         nombres =  this.nombres,
+                         documento = this.documento,
+                         id_usuario_suscripcion = this.id_usuario_suscripcion
+                     };
+                     await suscripcionService.GuardarSuscripcion(suscripcion);
                      Cerrar();
                  }, 
                  canExecute: () =>
@@ -94,8 +104,9 @@ namespace AMP.ViewModels
                  });
 
             Borrar = new Command(
-                execute: () =>
+                execute: async () =>
                 {
+                    await suscripcionService.EliminarSuscripcion(this.id_usuario_suscripcion);
                     Cerrar();
                 },
                 canExecute: () =>
@@ -108,12 +119,21 @@ namespace AMP.ViewModels
                 {
                     Cerrar();
                 });
+            CargarDatos();
         }
 
         public async void Cerrar()
         {
             await Navigation.PopAsync();
         }
+        private void CargarDatos()
+        {
+            var suscripcion = Constantes.SuscripcionSeleccionada;
+            this.id_usuario_suscripcion = suscripcion.id_usuario_suscripcion;
+            this.nombres = suscripcion.nombres;
+            this.documento = suscripcion.documento;
+            this.estado = suscripcion.estado;
 
+        }
     }
 }

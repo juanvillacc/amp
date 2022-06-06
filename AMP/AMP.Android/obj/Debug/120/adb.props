@@ -1,2 +1,2 @@
-AdbTarget=-s 6NUDU18912015022
+AdbTarget=-s 127.0.0.1:21503
 AdbOptions=

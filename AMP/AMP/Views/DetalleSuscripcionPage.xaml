@@ -32,17 +32,17 @@
 
             <Button
                 Text="Guardar"
-                Clicked="{Binding Guardar}"
+                Command="{Binding Guardar}"
                 >
             </Button>
             <Button
                 Text="Borrar"
-                 Clicked="{Binding Borrar}"
+                 Command="{Binding Borrar}"
                 >
             </Button>
             <Button
                 Text="Cancelar"
-                 Clicked="{Binding Cancelar}"
+                 Command="{Binding Cancelar}"
                 >
             </Button>
 

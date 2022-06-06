@@ -1,16 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-<<<<<<< HEAD
-    <SelectedDevice>pixel_5_-_api_30</SelectedDevice>
-    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <ActiveDebugProfile>pixel_5_-_api_30</ActiveDebugProfile>
+    <SelectedDevice>Samsung SM-N975F</SelectedDevice>
+    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
+    <ActiveDebugProfile>Samsung SM-N975F</ActiveDebugProfile>
     <DefaultDevice>pixel_5_-_api_30</DefaultDevice>
-=======
-    <SelectedDevice>pixel_2_pie_9_0_-_api_28</SelectedDevice>
-    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <ActiveDebugProfile>pixel_2_pie_9_0_-_api_28</ActiveDebugProfile>
-    <DefaultDevice>pixel_2_pie_9_0_-_api_28</DefaultDevice>
->>>>>>> 294c628ef89a3cb85d1c3b0b0724c86534f88c18
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>

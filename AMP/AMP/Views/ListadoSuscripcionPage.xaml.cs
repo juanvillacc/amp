@@ -13,10 +13,18 @@ namespace AMP.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListadoSuscripcionPage : ContentPage
     {
+        ListadoSuscripcionViewModel viewModel;
         public ListadoSuscripcionPage()
         {
             InitializeComponent();
-            this.BindingContext = new ListadoSuscripcionViewModel(Navigation);
+            viewModel = new ListadoSuscripcionViewModel(Navigation);
+            this.BindingContext = viewModel;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            viewModel.CargarSuscripciones();
         }
     }
 }

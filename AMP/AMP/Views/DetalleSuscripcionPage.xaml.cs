@@ -13,10 +13,17 @@ namespace AMP.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetalleSuscripcionPage : ContentPage
     {
+        DetalleSuscripcionViewModel viewModel;
         public DetalleSuscripcionPage()
         {
             InitializeComponent();
-            this.BindingContext = new DetalleSuscripcionViewModel(Navigation);
+            viewModel = new DetalleSuscripcionViewModel(Navigation);
+            this.BindingContext = viewModel;
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            viewModel.ObtenerCiudades();
         }
     }
 }

@@ -34,6 +34,9 @@ E:\ASALUDSOLUTION_APP\Proyecto\AMP\AMP\AMP\obj\Debug\netstandard2.0\AMP.dll
 E:\ASALUDSOLUTION_APP\Proyecto\AMP\AMP\AMP\obj\Debug\netstandard2.0\refint\AMP.dll
 E:\ASALUDSOLUTION_APP\Proyecto\AMP\AMP\AMP\obj\Debug\netstandard2.0\AMP.pdb
 E:\ASALUDSOLUTION_APP\Proyecto\AMP\AMP\AMP\obj\Debug\netstandard2.0\ref\AMP.dll
+C:\temp\amp\AMP\AMP\bin\Debug\netstandard2.0\AMP.deps.json
+C:\temp\amp\AMP\AMP\bin\Debug\netstandard2.0\AMP.dll
+C:\temp\amp\AMP\AMP\bin\Debug\netstandard2.0\AMP.pdb
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\AMP.csproj.AssemblyReference.cache
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\AMP.GeneratedMSBuildEditorConfig.editorconfig
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\App.xaml.g.cs
@@ -44,11 +47,8 @@ C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\AMP.AssemblyInfoInputs.cache
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\AMP.AssemblyInfo.cs
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\AMP.csproj.CoreCompileInputs.cache
+C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\XamlC.stamp
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\AMP.dll
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\refint\AMP.dll
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\AMP.pdb
-C:\temp\amp\AMP\AMP\bin\Debug\netstandard2.0\AMP.deps.json
-C:\temp\amp\AMP\AMP\bin\Debug\netstandard2.0\AMP.dll
-C:\temp\amp\AMP\AMP\bin\Debug\netstandard2.0\AMP.pdb
-C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\XamlC.stamp
 C:\temp\amp\AMP\AMP\obj\Debug\netstandard2.0\ref\AMP.dll

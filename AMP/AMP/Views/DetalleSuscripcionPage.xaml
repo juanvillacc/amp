@@ -29,7 +29,17 @@
                 HorizontalOptions="StartAndExpand"
                     IsChecked="{Binding estado}"
                 />
+            <Label Text="Ciudad"
+                   HorizontalOptions="Start" 
+                   />
 
+            <Picker ItemDisplayBinding="{Binding nombres}"
+                    Title="-Seleccione la ciudad-"
+                    SelectedItem="{Binding CiudadSeleccionada}" 
+                    ItemsSource="{Binding ListaCiudades, Mode=TwoWay}"
+
+                >
+               </Picker>
             <Button
                 Text="Guardar"
                 Command="{Binding Guardar}"

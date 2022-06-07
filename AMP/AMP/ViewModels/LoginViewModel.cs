@@ -4,12 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace AMP.ViewModels
 {
-    internal class LoginViewModel : BaseViewModel
+    public class LoginViewModel : BaseViewModel
     {
         INavigation Navigation;
         public LoginViewModel(INavigation navigation)
@@ -17,22 +18,29 @@ namespace AMP.ViewModels
             IniciarSesion = new Command(
                 execute: async () =>
                 {
-                    UsuarioService usuario = new UsuarioService();
-
-                    var validacion = await usuario.ValidarUsuarioAsync(Usuario, Contrasena);
-                    if (validacion)
-                    {
-                        await Navigation.PushAsync(new ListadoSuscripcionPage());
-                    }
-
+                    await ValidarUsuario();
 
                 }, canExecute: () =>
                 {
-                    return !String.IsNullOrEmpty(Usuario) && !String.IsNullOrEmpty(Contrasena);
+                    return !string.IsNullOrEmpty(Usuario) && !string.IsNullOrEmpty(Contrasena);
                 });
             Navigation = navigation;
         }
 
+        public async Task ValidarUsuario()
+        {
+            UsuarioService usuario = new UsuarioService();
+
+            var validacion = await usuario.ValidarUsuarioAsync(Usuario, Contrasena);
+            if (validacion)
+            {
+                await Navigation.PushAsync(new ListadoSuscripcionPage());
+            }
+            else
+            {
+                Mensaje = "No se pudo acceder a la plataforma";
+            }
+        }
 
         private String _usuario;
 
@@ -68,6 +76,20 @@ namespace AMP.ViewModels
             }
         }
 
+        private string _mensaje;
+
+        public string Mensaje
+        {
+            get { return _mensaje; }
+            set
+            {
+                if (_mensaje != value)
+                {
+                    _mensaje = value;
+                    OnPropertyChanged("Mensaje");
+                }
+            }
+        }
 
 
         public ICommand IniciarSesion { get; set; }

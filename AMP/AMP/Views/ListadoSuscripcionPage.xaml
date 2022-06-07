@@ -5,7 +5,7 @@
              Title="Listado suscripción"
              >
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+" Command="{Binding commandAgregar}"
+        <ToolbarItem Text="+" Command="{Binding commandAgregar}" 
                       >
             <ToolbarItem.IconImageSource>
                 <OnPlatform x:TypeArguments="ImageSource">

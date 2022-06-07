@@ -3,6 +3,8 @@ using AMP.Services;
 using AMP.Utilities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -93,7 +95,8 @@ namespace AMP.ViewModels
                          estado = this.estado,
                          nombres =  this.nombres,
                          documento = this.documento,
-                         id_usuario_suscripcion = this.id_usuario_suscripcion
+                         id_usuario_suscripcion = this.id_usuario_suscripcion,
+                         id_ciudad = CiudadSeleccionada.id_ciudad
                      };
                      await suscripcionService.GuardarSuscripcion(suscripcion);
                      Cerrar();
@@ -133,7 +136,43 @@ namespace AMP.ViewModels
             this.nombres = suscripcion.nombres;
             this.documento = suscripcion.documento;
             this.estado = suscripcion.estado;
-
+            //this.CiudadSeleccionada = suscripcion.id_ciudad;
         }
+
+        private List<Ciudad> _listaCiudades;
+        public List<Ciudad> ListaCiudades
+        {
+            get { return _listaCiudades; }
+            set
+            {
+                if (_listaCiudades != value)
+                {
+                    _listaCiudades = value;
+                    OnPropertyChanged("ListaCiudades");
+                }
+            }
+        }
+        private Ciudad _ciudadSeleccionada;
+
+        public Ciudad CiudadSeleccionada
+        {
+            get { return _ciudadSeleccionada; }
+            set {
+                if (((Ciudad)_ciudadSeleccionada)?.id_ciudad != ((Ciudad)value).id_ciudad)
+                {
+                    _ciudadSeleccionada = value;
+                    OnPropertyChanged("CiudadSeleccionada");
+                }
+            }
+        }
+
+
+        public async void ObtenerCiudades()
+        {
+            CiudadServices CiudadService = new CiudadServices();
+            var listadoCiudad = await CiudadService.ObtenerCiudades();
+            ListaCiudades = listadoCiudad;
+        }
+
     }
 }
